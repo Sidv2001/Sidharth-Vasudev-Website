@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sidharth Vasudev</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Top</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1> <strong>Sidharth Vasudev</strong>.</h1>
+							</header>
+							<p>I am a student studying at Cornell University, and am passionate about pursuing </strong>Machine Learning</strong> and its interesecting fields (Computer Vision, Reinforcment Learninng and Natural Language Processing). I like to study interesting concepts, read books and excercise in my free time. </p>
+							<a href="#work" class="button large scrolly">My Resume</a>
+						</div>
+					</div>
+				</div>
+			</article>
+
+		<!-- Work -->
+			<article id="work" class="wrapper style2">
+				<div class="container">
+					<header>
+						<h2>Experience (Research + Industry) </h2>
+						<p>Over the last two years I have been focusing on research and internships in Machine Learning</p>
+					</header>
+					<div class="row aln-center">
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<h3>BanditNet Project with Thorsten Joachims, Cornell University, Undergraduate Researcher, 2021</h3>
+								<p>The BanditNet project is centered around developing a model for Counterfactual Learning, which is a method used for learning with Biased Data. <br>	Our aim was to develop a PyTorch framework for others to use Counterfactual Learning, and it is called BanditNet. We developed methods to load datasets, model frameworks, hyperparameter tunings, and different families of estimators within this field. <br>	Worked on the development of the whole software package, as well as the testing and empirical results generation for the package.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<h3>NLP Research @ Claire Cardie’s Lab, Cornell University, Undergraduate Researcher, 2020</h3>
+								<p>Aiming to develop a model, similar to GPT-3, that takes an incomplete proof, and after learning on a database of proofs (provided by Nuprl) predicts the next step of the proof. <br> Pre-processed the data to be easier to train on, given that we needed to represent proofs as data. Worked with Nuprl data for the main training set. Pre-trained on proof data from Github, Arxiv, and Stackexchange. <br> Designing the specific model and hyperparameters chosen, by looking at models used in similar research papers.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								<h3>EdgeInvest AI, CS Team Lead</h3>
+								<p>To be Written</p>
+							</section>
+						</div>
+					</div>
+				</div>
+			</article>
+
+		<!-- Portfolio -->
+			<article id="portfolio" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Projects</h2>
+						<p>Here are the projects I have worked on in the last two years. I have focused on solving kaggle projects due to the access to data. </p>
+					</header>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<h3><a href="#">Jane Street Market Prediction Kaggle Competition 2021 (Ongoing)</a></h3>
+								<p>Developed a Deep Learning Model to predict whether to take a trading opportunity or not. Created a custom loss function based on the results of the trade opportunity provide. <br> The Jane Street Market Prediction is a binary class prediction problem, with a custom reward/loss if the trade was taken. <br> To do better on this problem I plan on setting this up as a counterfactual learning problem with 2 actions and a uniform policy distribution (since we know both actions) <br> 	Am currently working on developing the framework for the counterfactual learning model I am to develop for this dataset. </p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<h3><a href="#">Mechanism of Action (MoA) Multi-Classification Kaggle Competition (2020)</a></h3>
+								<p>Developing a model to predict the mechanism of action for a disease given the cell data and response to a drug. <br> The mechanism of action is a multiclass classification problem, with a mix of continuous and discrete data provided. <br> Designed a model involving the use of a NN model with 15 hidden layers using a Tanh activation function and a SoftMax function on the final layer, that is trained using mini-batch gradient descent. <br> Applied PCA to reduce the dimension till 99% accuracy, before using it in the model. Reached a final score of 0.982.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								<h3><a href="#">SIIM-ISIC Melanoma Classification Kaggle Competition (2020) </a></h3>
+								<p>Developing a model that uses images of skin lesions to predict whether or not the image represents a melanoma. <br> Utilized multiple layers of filters to try and extract useful information and then prepared a NN implementation with 25 layers with ReLu activation units and a sigmoid activation function at the end, using a logarithmic loss to optimize. <br> Reached a score of 0.936 on the final competition. </p>
+							</article>
+						</div>
+					</div>
+					<footer>
+						<p>Email: sv355@cornell.edu     Phone: (917)-971-6534     GitHub: Sidv2001 </p>
+					</footer>
+				</div>
+			</article>
+
+		
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
